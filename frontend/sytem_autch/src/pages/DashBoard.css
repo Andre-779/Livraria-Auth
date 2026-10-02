@@ -1,0 +1,218 @@
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.dashboard-sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background: #0056b3;
+    color: white;
+
+    padding: 25px 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+}
+
+.dashboard-logo {
+    font-size: 22px;
+    font-weight: bold;
+
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.dashboard-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dashboard-menu button,
+.menu-sair {
+    border: none;
+    background: transparent;
+
+    color: white;
+
+    padding: 13px;
+
+    border-radius: 8px;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.dashboard-menu button:hover,
+.dashboard-menu .menu-ativo {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.menu-sair {
+    margin-top: auto;
+}
+
+.menu-sair:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+.dashboard-main {
+    flex: 1;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    margin: 0 0 5px;
+
+    font-size: 28px;
+
+    color: #222;
+}
+
+.dashboard-header p {
+    margin: 0;
+
+    color: #777;
+}
+
+
+/* =========================
+   INFORMAÇÕES DO USUÁRIO
+========================= */
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.usuario-foto,
+.usuario-avatar {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+}
+
+.usuario-foto {
+    object-fit: cover;
+}
+
+.usuario-avatar {
+    background: #0056b3;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.usuario-info div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario-info strong {
+    color: #222;
+}
+
+.usuario-info span {
+    color: #777;
+
+    font-size: 13px;
+
+    text-transform: capitalize;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.dashboard-content {
+    width: 100%;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 700px) {
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .dashboard-sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .dashboard-menu {
+        flex-direction: row;
+
+        overflow-x: auto;
+    }
+
+    .dashboard-menu button {
+        white-space: nowrap;
+    }
+
+    .dashboard-main {
+        padding: 20px;
+    }
+
+    .dashboard-header {
+        align-items: flex-start;
+
+        gap: 20px;
+
+        flex-direction: column;
+    }
+}
