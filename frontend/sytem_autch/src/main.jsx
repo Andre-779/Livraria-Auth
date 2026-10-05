@@ -9,7 +9,7 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* 2. Configure o provedor passando o seu Client ID gerado no Google Console */}
-    <GoogleOAuthProvider clientId="293805432707-ueamfsj29mp4bkl566057qapku5fn4g5.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="97999642203-mms6currpki8mnltndjv748muuogoeik.apps.googleusercontent.com">
       <BrowserRouter>
         <App />
       </BrowserRouter>

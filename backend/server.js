@@ -1,4 +1,4 @@
-import app from './app.js'; //  Certifique-se de incluir a extensão .js
+import app from './app.js'; 
 
 
 const PORTA = process.env.PORT || 3000;
